@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>遨遊台灣BLOG</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            color: #fff;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .blog-posts {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            padding: 20px 0;
+        }
+        .post {
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            width: 30%;
+            margin-bottom: 20px;
+        }
+        .post img {
+            max-width: 100%;
+            height: auto;
+        }
+        .post h2 {
+            color: #333;
+        }
+        .post p {
+            color: #666;
+        }
+        .post a {
+            display: inline-block;
+            margin-top: 10px;
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            width: 100%;
+        }
+        .single-post {
+            padding: 20px 0;
+        }
+        .single-post h1 {
+            color: #333;
+        }
+        .single-post p {
+            color: #666;
+            line-height: 1.6;
+        }
+        .single-post img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        .comment-section {
+            margin-top: 40px;
+        }
+        .comment-section h3 {
+            margin-bottom: 10px;
+        }
+        .comment-section form {
+            margin-bottom: 30px;
+        }
+        .comment-section input, .comment-section textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .comment-section input[type="submit"] {
+            background: #4CAF50;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        .comments {
+            margin-top: 20px;
+        }
+        .comment {
+            background: #f4f4f4;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        .comment p {
+            margin: 5px 0;
+        }
+        .new-post-form {
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin-top: 40px;
+        }
+        .new-post-form input, .new-post-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .new-post-form input[type="submit"] {
+            background: #4CAF50;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>遨遊台灣BLOG</h1>
+    </header>
+    <nav>
+        <a href="#home">首頁</a>
+        <a href="#blog">部落格文章</a>
+        <a href="#new-post">發表文章</a>
+        <a href="#contact">聯絡我們</a>
+    </nav>
+    <div class="container">
+        <section id="home">
+            <h2>歡迎來到遨遊台灣BLOG</h2>
+            <p>探索台灣的美麗，從壯麗的山脈到美麗的海灘，這裡收集著我們在台灣的旅遊經歷。</p>
+            <p>你也可以將任何去過的美好回憶分享給大家。</p>
+        </section>
+        <section id="blog" class="blog-posts">
+            <div class="post">
+                <img src="https://via.placeholder.com/300x200" alt="台北101">
+                <h2>探索台北101</h2>
+                <p>台北101是台灣的地標，擁有絕佳的觀景平台，可以俯瞰整個台北市。</p>
+                <a href="#post1">閱讀更多</a>
+            </div>
+            <div class="post">
+                <img src="https://via.placeholder.com/300x200" alt="九份">
+                <h2>九份的浪漫黃昏</h2>
+                <p>九份以其美麗的黃昏景色和獨特的老街聞名，是一個不可錯過的旅遊景點。</p>
+                <a href="#post2">閱讀更多</a>
+            </div>
+            <div class="post">
+                <img src="https://via.placeholder.com/300x200" alt="墾丁">
+                <h2>墾丁的陽光與海灘</h2>
+                <p>墾丁擁有台灣最美麗的海灘，是享受陽光和海灘活動的最佳地點。</p>
+                <a href="#post3">閱讀更多</a>
+            </div>
+        </section>
+        <section id="post1" class="single-post">
+            <h1>探索台北101</h1>
+            <img src="https://via.placeholder.com/800x400" alt="台北101">
+            <p>台北101是台灣的地標，擁有絕佳的觀景平台，可以俯瞰整個台北市。台北101不僅是一個摩天大樓，還是一個購物中心，擁有各種國際品牌和美食。</p>
+            <div class="comment-section">
+                <h3>留言區</h3>
+                <form id="commentForm1">
+                    <input type="text" id="username1" placeholder="您的名字" required>
+                    <textarea id="comment1" rows="4" placeholder="您的留言" required></textarea>
+                    <input type="submit" value="提交留言">
+                </form>
+                <div class="comments" id="comments1"></div>
+            </div>
+        </section>
+        <section id="post2" class="single-post">
+            <h1>九份的浪漫黃昏</h1>
+            <img src="https://via.placeholder.com/800x400" alt="九份">
+            <p>九份以其美麗的黃昏景色和獨特的老街聞名，是一個不可錯過的旅遊景點。走在九份的老街上，品嘗各種小吃和手工藝品，讓人流連忘返。</p>
+            <div class="comment-section">
+                <h3>留言區</h3>
+                <form id="commentForm2">
+                    <input type="text" id="username2" placeholder="您的名字" required>
+                    <textarea id="comment2" rows="4" placeholder="您的留言" required></textarea>
+                    <input type="submit" value="提交留言">
+                </form>
+                <div class="comments" id="comments2"></div>
+            </div>
+        </section>
+        <section id="post3" class="single-post">
+            <h1>墾丁的陽光與海灘</h1>
+            <img src="https://via.placeholder.com/800x400" alt="墾丁">
+            <p>墾丁擁有台灣最美麗的海灘，是享受陽光和海灘活動的最佳地點。無論是浮潛、衝浪，還是單純的日光浴，墾丁都能滿足您的需求。</p>
+            <div class="comment-section">
+                <h3>留言區</h3>
+                <form id="commentForm3">
+                    <input type="text" id="username3" placeholder="您的名字" required>
+                    <textarea id="comment3" rows="4" placeholder="您的留言" required></textarea>
+                    <input type="submit" value="提交留言">
+                </form>
+                <div class="comments" id="comments3"></div>
+            </div>
+        </section>
+        <section id="new-post" class="new-post-form">
+            <h2>發表新文章</h2>
+            <form id="newPostForm">
+                <input type="text" id="postTitle" placeholder="文章標題" required>
+                <textarea id="postContent" rows="6" placeholder="文章內容" required></textarea>
+                <input type="submit" value="發表文章">
+            </form>
+        </section>
+        <section id="contact" class="contact-form">
+            <h2>聯絡我們</h2>
+            <form>
+                <label for="name">姓名:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">電子郵件:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">訊息:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <input type="submit" value="提交">
+            </form>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 遨遊台灣部落格. 保留所有權利.</p>
+    </footer>
+    <script>
+        // 處理留言提交
+        function handleCommentSubmit(event, postId) {
+            event.preventDefault();
+            const usernameInput = document.getElementById('username' + postId);
+            const commentInput = document.getElementById('comment' + postId);
+            const commentsDiv = document.getElementById('comments' + postId);
+
+            const comment = document.createElement('div');
+            comment.className = 'comment';
+            comment.innerHTML = '<p><strong>' + usernameInput.value + ':</strong></p><p>' + commentInput.value + '</p>';
+
+            commentsDiv.appendChild(comment);
+
+            usernameInput.value = '';
+            commentInput.value = '';
+        }
+
+        document.getElementById('commentForm1').addEventListener('submit', (event) => handleCommentSubmit(event, 1));
+        document.getElementById('commentForm2').addEventListener('submit', (event) => handleCommentSubmit(event, 2));
+        document.getElementById('commentForm3').addEventListener('submit', (event) => handleCommentSubmit(event, 3));
+
+        // 處理新文章提交
+        document.getElementById('newPostForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const postTitle = document.getElementById('postTitle').value;
+            const postContent = document.getElementById('postContent').value;
+
+            const newPost = document.createElement('div');
+            newPost.className = 'post';
+            newPost.innerHTML = '<h2>' + postTitle + '</h2><p>' + postContent + '</p>';
+
+            document.querySelector('.blog-posts').appendChild(newPost);
+
+            document.getElementById('postTitle').value = '';
+            document.getElementById('postContent').value = '';
+        });
+    </script>
+</body>
+</html>
